@@ -1,0 +1,777 @@
+
+################################################################ PRECHECK EXECUTION ##################################################################
+
+Created and writing output to '/var/log/precheck_ansible-server_20122020214052' log file.
+
+################################################################ TAR BACKUP ##################################################################
+
+Taking tar backup of /boot...
+
+[0;32mTar backup of /boot Completed[0m
+
+[0;32m/var/log/boot-20122020214052.tar.gz file created successfully.[0m
+
+Taking tar backup of /etc...
+
+[0;32mTar backup of /etc Completed[0m
+
+[0;32m/var/log/etc-20122020214052.tar.gz file created successfully.[0m
+
+Taking tar backup of /etc/pam.d...
+
+[0;32mTar backup of /etc/pam.d Completed[0m
+
+[0;32m/var/log/pam-20122020214052.tar.gz file created successfully.[0m
+
+
+############################################################ SYSTEM INFORMATION ##################################################################
+
+Hostname:		[0;32mansible-server[0m
+Server IP:		[0;32m172.31.32.64[0m
+Subnet Mask:		[0;32m255.255.240.0[0m
+Gateway:		[0;32m172.31.32.1[0m
+uptime:			[0;32m20 days [0m
+Manufacturer:		[0;32mXen[0m
+Product Name:		[0;32mHVM domU[0m
+Machine Type:		[0;32mVM[0m
+Operating System:	[0;32mAmazon Linux 2[0m
+Kernel:			[0;32m4.14.203-156.332.amzn2.x86_64[0m
+Architecture:		[0;32mx86_64[0m
+Processor Name:		[0;32mIntel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz[0m
+Installed Java Version:	[0;32mopenjdk version "1.8.0_265"[0m
+Active User:
+[0;32mrudrap
+rudrap[0m
+
+####################################################### CPU, MEMORY & DISK DETAILS ##################################################################
+
+Total No. of vCPU's:	[0;32m1[0m
+Total RAM Size:		[0;32m983 MB[0m
+Total Swap Size:	[0;32m0 MB[0m
+
+################################################# DISK DETAILS ATTACHED TO THE SERVER ############################################################
+
+Disk /dev/xvda: 8 GiB, 8589934592 bytes, 16777216 sectors
+
+[0;32mCapturing Disk Details Completed[0m
+
+######################################################### BLOCK & MOUNT DETAILS #################################################################
+
+NAME    MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+xvda    202:0    0   8G  0 disk 
+└─xvda1 202:1    0   8G  0 part /
+
+[0;32mCapturing Block & Mount Details Completed[0m
+
+############################################################## UUID DETAILS #####################################################################
+
+/dev/xvda1: LABEL="/" UUID="15c7809d-e6e3-4062-a5eb-afeb1939fc6e" TYPE="xfs" PARTLABEL="Linux" PARTUUID="cfb2e895-ecec-41c5-afc2-40ffe2e4384a"
+
+[0;32mCapturing UUID Details Completed[0m
+
+############################################################### LVM DETAILS ####################################################################
+
+[0;32mNo LVMs partitions available in the server.[0m
+
+###################################################### CPU/MEMORY USAGE DETAILS ################################################################
+
+Total Memory Usage:	[0;32m64.94%[0m
+Total Swap Usage:	[0;32mSwap space not allocated[0m
+Total CPU Usage:	[0;32m0.43%[0m
+
+########################################################## MEMORY USAGE DETAILED INFORMATION #######################################################
+
+              total        used        free      shared  buff/cache   available
+Mem:            983         638          65           0         279         201
+Swap:             0           0           0
+Total:          983         638          65
+
+[0;32mCapturing Memory Usage Details Completed[0m
+
+
+################################################################ DISK USAGE ####################################################################
+
+Filesystem     Type      Size  Used Avail Use% Mounted on
+devtmpfs       devtmpfs  482M     0  482M   0% /dev
+tmpfs          tmpfs     492M  128K  492M   1% /dev/shm
+tmpfs          tmpfs     492M  564K  492M   1% /run
+tmpfs          tmpfs     492M     0  492M   0% /sys/fs/cgroup
+/dev/xvda1     xfs       8.0G  5.9G  2.2G  73% /
+tmpfs          tmpfs      99M     0   99M   0% /run/user/1001
+
+[0;32mCapturing Disk Usage Details Completed[0m
+
+
+########################################################### ROUTE & IP DETAILS ####################################################################
+
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         172.31.32.1     0.0.0.0         UG    0      0        0 eth0
+169.254.169.254 0.0.0.0         255.255.255.255 UH    0      0        0 eth0
+172.31.32.0     0.0.0.0         255.255.240.0   U     0      0        0 eth0
+
+[0;32mCapturing Route Details Completed[0m
+
+----------------------------------------------------------------------------------------------------
+
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 9001
+        inet 172.31.32.64  netmask 255.255.240.0  broadcast 172.31.47.255
+        inet6 fe80::8bd:fdff:fe8c:5258  prefixlen 64  scopeid 0x20<link>
+        ether 0a:bd:fd:8c:52:58  txqueuelen 1000  (Ethernet)
+        RX packets 3202007  bytes 1139139501 (1.0 GiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2977651  bytes 902195494 (860.4 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 129131  bytes 10847008 (10.3 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 129131  bytes 10847008 (10.3 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+[0;32mCapturing IP Address Details Completed[0m
+
+
+############################################################### WWN DETAILS ####################################################################
+
+ansible-server is a VM
+
+[0;32mCapturing WWN Details Completed[0m
+
+
+############################################################### SELINUX DETAILS ####################################################################
+
+SELinux status:                 disabled
+
+[0;32mCapturing SELinux Status Completed[0m
+
+----------------------------------------------------------------
+
+SELINUX Config File:[0;32m
+SELINUX=disabled
+[0m
+
+############################################################### HOSTS FILE ####################################################################
+
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost6 localhost6.localdomain6
+
+[0;32mCapturing /etc/hosts file contents Completed[0m
+
+
+############################################################### DNS/RESOLV FILE ####################################################################
+
+; generated by /usr/sbin/dhclient-script
+search us-east-2.compute.internal
+options timeout:2 attempts:5
+nameserver 172.31.0.2
+
+[0;32mCapturing /etc/resolv.conf file contents Completed[0m
+
+
+############################################################### PASSWD FILE ####################################################################
+
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+systemd-network:x:192:192:systemd Network Management:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/sbin/nologin
+libstoragemgmt:x:999:997:daemon account for libstoragemgmt:/var/run/lsm:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+nfsnobody:x:65534:65534:Anonymous NFS User:/var/lib/nfs:/sbin/nologin
+ec2-instance-connect:x:998:996::/home/ec2-instance-connect:/sbin/nologin
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+chrony:x:997:995::/var/lib/chrony:/sbin/nologin
+rngd:x:996:994:Random Number Generator Daemon:/var/lib/rngd:/sbin/nologin
+tcpdump:x:72:72::/:/sbin/nologin
+ec2-user:x:1000:1000:EC2 Default User:/home/ec2-user:/bin/bash
+jenkins:x:995:993:Jenkins Automation Server:/var/lib/jenkins:/bin/bash
+rudrap:x:1001:1001::/home/rudrap:/bin/bash
+apache:x:48:48:Apache:/usr/share/httpd:/sbin/nologin
+
+[0;32mCapturing /etc/passwd file contents Completed[0m
+
+
+############################################################### SHADOW DETAILS ####################################################################
+
+root:*LOCK*:14600::::::
+bin:*:18313:0:99999:7:::
+daemon:*:18313:0:99999:7:::
+adm:*:18313:0:99999:7:::
+lp:*:18313:0:99999:7:::
+sync:*:18313:0:99999:7:::
+shutdown:*:18313:0:99999:7:::
+halt:*:18313:0:99999:7:::
+mail:*:18313:0:99999:7:::
+operator:*:18313:0:99999:7:::
+games:*:18313:0:99999:7:::
+ftp:*:18313:0:99999:7:::
+nobody:*:18313:0:99999:7:::
+systemd-network:!!:18592::::::
+dbus:!!:18592::::::
+rpc:!!:18592:0:99999:7:::
+libstoragemgmt:!!:18592::::::
+sshd:!!:18592::::::
+rpcuser:!!:18592::::::
+nfsnobody:!!:18592::::::
+ec2-instance-connect:!!:18592::::::
+postfix:!!:18592::::::
+chrony:!!:18592::::::
+rngd:!!:18592::::::
+tcpdump:!!:18592::::::
+ec2-user:!!:18596:0:99999:7:::
+jenkins:!!:18596::::::
+rudrap:$6$YIVgQkTs$vY8O5lXB50ux0.sNVgzmZJDnR7xcQYivRyCK/.7sTuB0Ehn67k0b7VqIC6M.MB77qj3BL2u6yUEgOLzCpaKtX.:18596:0:99999:7:::
+apache:!!:18598::::::
+
+[0;32mCapturing /etc/shadow file contents Completed[0m
+
+
+############################################################### GROUP DETAILS ####################################################################
+
+root:x:0:
+bin:x:1:
+daemon:x:2:
+sys:x:3:
+adm:x:4:ec2-user
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mem:x:8:
+kmem:x:9:
+wheel:x:10:ec2-user
+cdrom:x:11:
+mail:x:12:postfix
+man:x:15:
+dialout:x:18:
+floppy:x:19:
+games:x:20:
+tape:x:33:
+video:x:39:
+ftp:x:50:
+lock:x:54:
+audio:x:63:
+nobody:x:99:
+users:x:100:
+utmp:x:22:
+utempter:x:35:
+input:x:999:
+systemd-journal:x:190:ec2-user
+systemd-network:x:192:
+dbus:x:81:
+ssh_keys:x:998:
+rpc:x:32:
+libstoragemgmt:x:997:
+sshd:x:74:
+rpcuser:x:29:
+nfsnobody:x:65534:
+ec2-instance-connect:x:996:
+slocate:x:21:
+postdrop:x:90:
+postfix:x:89:
+chrony:x:995:
+rngd:x:994:
+screen:x:84:
+stapusr:x:156:
+stapsys:x:157:
+stapdev:x:158:
+tcpdump:x:72:
+ec2-user:x:1000:
+jenkins:x:993:
+rudrap:x:1001:
+apache:x:48:
+sysadmins:x:1002:rudrap
+
+[0;32mCapturing /etc/group file contents Completed[0m
+
+
+############################################################### GSHADOW DETAILS ####################################################################
+
+root:::
+bin:::
+daemon:::
+sys:::
+adm:::ec2-user
+tty:::
+disk:::
+lp:::
+mem:::
+kmem:::
+wheel:::ec2-user
+cdrom:::
+mail:::postfix
+man:::
+dialout:::
+floppy:::
+games:::
+tape:::
+video:::
+ftp:::
+lock:::
+audio:::
+nobody:::
+users:::
+utmp:!::
+utempter:!::
+input:!::
+systemd-journal:!::ec2-user
+systemd-network:!::
+dbus:!::
+ssh_keys:!::
+rpc:!::
+libstoragemgmt:!::
+sshd:!::
+rpcuser:!::
+nfsnobody:!::
+ec2-instance-connect:!::
+slocate:!::
+postdrop:!::
+postfix:!::
+chrony:!::
+rngd:!::
+screen:!::
+stapusr:!::
+stapsys:!::
+stapdev:!::
+tcpdump:!::
+ec2-user:!::
+jenkins:!::
+rudrap:!::
+apache:!::
+sysadmins:!::rudrap
+
+[0;32mCapturing /etc/gshadow file contents Completed[0m
+
+
+############################################################### SUDOERS DETAILS ####################################################################
+
+Defaults   !visiblepw
+Defaults    always_set_home
+Defaults    match_group_by_gid
+Defaults    always_query_group_plugin
+Defaults    env_reset
+Defaults    env_keep =  "COLORS DISPLAY HOSTNAME HISTSIZE KDEDIR LS_COLORS"
+Defaults    env_keep += "MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE"
+Defaults    env_keep += "LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES"
+Defaults    env_keep += "LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE"
+Defaults    env_keep += "LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY"
+Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin
+root	ALL=(ALL) 	ALL
+jenkins ALL=(ALL)       NOPASSWD: ALL 
+rudrap ALL=(ALL)       ALL
+%wheel	ALL=(ALL)	ALL
+
+[0;32mCapturing /etc/sudoers file contents Completed[0m
+
+
+############################################################### FSTAB DETAILS ####################################################################
+
+#
+UUID=15c7809d-e6e3-4062-a5eb-afeb1939fc6e     /           xfs    defaults,noatime  1   1
+
+[0;32mCapturing /etc/fstab file contents Completed[0m
+
+
+############################################################### GRUB DETAILS ####################################################################
+
+set pager=1
+if [ -s $prefix/grubenv ]; then
+  load_env
+fi
+if [ "${next_entry}" ] ; then
+   set default="${next_entry}"
+   set next_entry=
+   save_env next_entry
+   set boot_once=true
+else
+   set default="0"
+fi
+if [ x"${feature_menuentry_id}" = xy ]; then
+  menuentry_id_option="--id"
+else
+  menuentry_id_option=""
+fi
+export menuentry_id_option
+if [ "${prev_saved_entry}" ]; then
+  set saved_entry="${prev_saved_entry}"
+  save_env saved_entry
+  set prev_saved_entry=
+  save_env prev_saved_entry
+  set boot_once=true
+fi
+function savedefault {
+  if [ -z "${boot_once}" ]; then
+    saved_entry="${chosen}"
+    save_env saved_entry
+  fi
+}
+function load_video {
+  if [ x$feature_all_video_module = xy ]; then
+    insmod all_video
+  else
+    insmod efi_gop
+    insmod efi_uga
+    insmod ieee1275_fb
+    insmod vbe
+    insmod vga
+    insmod video_bochs
+    insmod video_cirrus
+  fi
+}
+if [ x$feature_default_font_path = xy ] ; then
+   font=unicode
+else
+insmod part_gpt
+insmod xfs
+if [ x$feature_platform_search_hint = xy ]; then
+  search --no-floppy --fs-uuid --set=root  15c7809d-e6e3-4062-a5eb-afeb1939fc6e
+else
+  search --no-floppy --fs-uuid --set=root 15c7809d-e6e3-4062-a5eb-afeb1939fc6e
+fi
+    font="/usr/share/grub/unicode.pf2"
+fi
+if loadfont $font ; then
+  set gfxmode=auto
+  load_video
+  insmod gfxterm
+fi
+terminal_output gfxterm
+if [ x$feature_timeout_style = xy ] ; then
+  set timeout_style=menu
+  set timeout=0
+else
+  set timeout=0
+fi
+if [ -f ${prefix}/user.cfg ]; then
+  source ${prefix}/user.cfg
+  if [ -n "${GRUB2_PASSWORD}" ]; then
+    set superusers="root"
+    export superusers
+    password_pbkdf2 root ${GRUB2_PASSWORD}
+  fi
+fi
+menuentry 'Amazon Linux (4.14.209-160.335.amzn2.x86_64) 2' --class centos rhel fedora --class gnu-linux --class gnu --class os --unrestricted $menuentry_id_option 'gnulinux-simple-15c7809d-e6e3-4062-a5eb-afeb1939fc6e' {
+	load_video
+	insmod gzio
+	insmod part_gpt
+	insmod xfs
+	if [ x$feature_platform_search_hint = xy ]; then
+	  search --no-floppy --fs-uuid --set=root  15c7809d-e6e3-4062-a5eb-afeb1939fc6e
+	else
+	  search --no-floppy --fs-uuid --set=root 15c7809d-e6e3-4062-a5eb-afeb1939fc6e
+	fi
+	linux16 /boot/vmlinuz-4.14.209-160.335.amzn2.x86_64 root=UUID=15c7809d-e6e3-4062-a5eb-afeb1939fc6e ro  console=tty0 console=ttyS0,115200n8 net.ifnames=0 biosdevname=0 nvme_core.io_timeout=4294967295 rd.emergency=poweroff rd.shell=0 LANG=en_US.UTF-8 KEYTABLE=us
+	initrd16 /boot/initramfs-4.14.209-160.335.amzn2.x86_64.img
+}
+menuentry 'Amazon Linux 2' --class centos rhel fedora --class gnu-linux --class gnu --class os --unrestricted $menuentry_id_option 'gnulinux-simple-15c7809d-e6e3-4062-a5eb-afeb1939fc6e' {
+	load_video
+	insmod gzio
+	insmod part_gpt
+	insmod xfs
+	if [ x$feature_platform_search_hint = xy ]; then
+	  search --no-floppy --fs-uuid --set=root  15c7809d-e6e3-4062-a5eb-afeb1939fc6e
+	else
+	  search --no-floppy --fs-uuid --set=root 15c7809d-e6e3-4062-a5eb-afeb1939fc6e
+	fi
+	linux16 /boot/vmlinuz-4.14.203-156.332.amzn2.x86_64 root=UUID=15c7809d-e6e3-4062-a5eb-afeb1939fc6e ro  console=tty0 console=ttyS0,115200n8 net.ifnames=0 biosdevname=0 nvme_core.io_timeout=4294967295 rd.emergency=poweroff rd.shell=0
+	initrd16 /boot/initramfs-4.14.203-156.332.amzn2.x86_64.img
+}
+submenu 'Advanced options for Amazon Linux 2' $menuentry_id_option 'gnulinux-advanced-15c7809d-e6e3-4062-a5eb-afeb1939fc6e' {
+	menuentry 'Amazon Linux (4.14.203-156.332.amzn2.x86_64) 2' --class centos rhel fedora --class gnu-linux --class gnu --class os --unrestricted $menuentry_id_option 'gnulinux-4.14.203-156.332.amzn2.x86_64-advanced-15c7809d-e6e3-4062-a5eb-afeb1939fc6e' {
+		load_video
+		insmod gzio
+		insmod part_gpt
+		insmod xfs
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root  15c7809d-e6e3-4062-a5eb-afeb1939fc6e
+		else
+		  search --no-floppy --fs-uuid --set=root 15c7809d-e6e3-4062-a5eb-afeb1939fc6e
+		fi
+		linux16 /boot/vmlinuz-4.14.203-156.332.amzn2.x86_64 root=UUID=15c7809d-e6e3-4062-a5eb-afeb1939fc6e ro  console=tty0 console=ttyS0,115200n8 net.ifnames=0 biosdevname=0 nvme_core.io_timeout=4294967295 rd.emergency=poweroff rd.shell=0
+		initrd16 /boot/initramfs-4.14.203-156.332.amzn2.x86_64.img
+	}
+}
+if [ -f  ${config_directory}/custom.cfg ]; then
+  source ${config_directory}/custom.cfg
+elif [ -z "${config_directory}" -a -f  $prefix/custom.cfg ]; then
+  source $prefix/custom.cfg;
+fi
+
+[0;32mCapturing GRUB file contents Completed[0m
+
+
+############################################################### ETC GRUB DETAILS ####################################################################
+
+GRUB_CMDLINE_LINUX_DEFAULT="console=tty0 console=ttyS0,115200n8 net.ifnames=0 biosdevname=0 nvme_core.io_timeout=4294967295 rd.emergency=poweroff rd.shell=0"
+GRUB_TIMEOUT=0
+GRUB_DISABLE_RECOVERY="true"
+
+[0;32mCapturing /etc/default/grub file contents Completed[0m
+
+
+############################################################### RC.LOCAL DETAILS ####################################################################
+
+touch /var/lock/subsys/local
+
+[0;32mCapturing /etc/rc.lcoal file contents Completed[0m
+
+
+############################################################# RUNNING PROCESSES ####################################################################
+
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 Nov30 ?        00:00:45 /usr/lib/systemd/systemd --switched-root --system --deserialize 21
+root         2     0  0 Nov30 ?        00:00:00 [kthreadd]
+root         4     2  0 Nov30 ?        00:00:00 [kworker/0:0H]
+root         6     2  0 Nov30 ?        00:00:00 [mm_percpu_wq]
+root         7     2  0 Nov30 ?        00:00:21 [ksoftirqd/0]
+root         8     2  0 Nov30 ?        00:00:23 [rcu_sched]
+root         9     2  0 Nov30 ?        00:00:00 [rcu_bh]
+root        10     2  0 Nov30 ?        00:00:00 [migration/0]
+root        11     2  0 Nov30 ?        00:00:03 [watchdog/0]
+root        12     2  0 Nov30 ?        00:00:00 [cpuhp/0]
+root        14     2  0 Nov30 ?        00:00:00 [kdevtmpfs]
+root        15     2  0 Nov30 ?        00:00:00 [netns]
+root        21     2  0 Nov30 ?        00:00:00 [xenbus]
+root        22     2  0 Nov30 ?        00:00:00 [xenwatch]
+root       172     2  0 Nov30 ?        00:00:00 [khungtaskd]
+root       173     2  0 Nov30 ?        00:00:00 [oom_reaper]
+root       174     2  0 Nov30 ?        00:00:00 [writeback]
+root       176     2  0 Nov30 ?        00:00:00 [kcompactd0]
+root       177     2  0 Nov30 ?        00:00:00 [ksmd]
+root       178     2  0 Nov30 ?        00:00:00 [khugepaged]
+root       179     2  0 Nov30 ?        00:00:00 [crypto]
+root       180     2  0 Nov30 ?        00:00:00 [kintegrityd]
+root       182     2  0 Nov30 ?        00:00:00 [kblockd]
+root       535     2  0 Nov30 ?        00:00:00 [md]
+root       538     2  0 Nov30 ?        00:00:00 [edac-poller]
+root       543     2  0 Nov30 ?        00:00:00 [watchdogd]
+root       684     2  0 Nov30 ?        00:00:11 [kauditd]
+root       690     2  0 Nov30 ?        00:00:08 [kswapd0]
+root       822     2  0 Nov30 ?        00:00:00 [kthrotld]
+root       872     2  0 Nov30 ?        00:00:00 [kstrp]
+root       900     2  0 Nov30 ?        00:00:00 [ipv6_addrconf]
+root      1538     2  0 Nov30 ?        00:00:00 [ata_sff]
+root      1553     2  0 Nov30 ?        00:00:00 [scsi_eh_0]
+root      1554     2  0 Nov30 ?        00:00:00 [scsi_tmf_0]
+root      1557     2  0 Nov30 ?        00:00:00 [scsi_eh_1]
+root      1558     2  0 Nov30 ?        00:00:00 [scsi_tmf_1]
+root      1586     2  0 Nov30 ?        00:00:00 [xfsalloc]
+root      1587     2  0 Nov30 ?        00:00:00 [xfs_mru_cache]
+root      1589     2  0 Nov30 ?        00:00:00 [xfs-buf/xvda1]
+root      1590     2  0 Nov30 ?        00:00:00 [xfs-data/xvda1]
+root      1591     2  0 Nov30 ?        00:00:00 [xfs-conv/xvda1]
+root      1592     2  0 Nov30 ?        00:00:00 [xfs-cil/xvda1]
+root      1593     2  0 Nov30 ?        00:00:00 [xfs-reclaim/xvd]
+root      1594     2  0 Nov30 ?        00:00:00 [xfs-log/xvda1]
+root      1595     2  0 Nov30 ?        00:00:00 [xfs-eofblocks/x]
+root      1596     2  0 Nov30 ?        00:06:09 [xfsaild/xvda1]
+root      1597     2  0 Nov30 ?        00:00:01 [kworker/0:1H]
+root      1660     1  0 Nov30 ?        00:03:08 /usr/lib/systemd/systemd-journald
+root      1684     1  0 Nov30 ?        00:00:00 /usr/sbin/lvmetad -f
+root      1690     2  0 Nov30 ?        00:00:00 [ena]
+root      1699     1  0 Nov30 ?        00:00:00 /usr/lib/systemd/systemd-udevd
+root      2441     1  0 Nov30 ?        00:00:50 /sbin/auditd
+root      2449     2  0 Nov30 ?        00:00:00 [rpciod]
+root      2452     2  0 Nov30 ?        00:00:00 [xprtiod]
+libstor+  2477     1  0 Nov30 ?        00:00:02 /usr/bin/lsmd -d
+rpc       2489     1  0 Nov30 ?        00:00:01 /sbin/rpcbind -w
+chrony    2491     1  0 Nov30 ?        00:00:19 /usr/sbin/chronyd
+root      2493     1  0 Nov30 ?        00:00:00 /usr/sbin/gssproxy -D
+root      2502     1  0 Nov30 ?        00:00:10 /usr/lib/systemd/systemd-logind
+dbus      2503     1  0 Nov30 ?        00:00:18 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+rngd      2516     1  0 Nov30 ?        00:00:31 /sbin/rngd -f --fill-watermark=0
+root      2719     1  0 Nov30 ?        00:00:00 /sbin/dhclient -q -lf /var/lib/dhclient/dhclient--eth0.lease -pf /var/run/dhclient-eth0.pid eth0
+root      2835     1  0 Nov30 ?        00:00:02 /sbin/dhclient -6 -nw -lf /var/lib/dhclient/dhclient6--eth0.lease -pf /var/run/dhclient6-eth0.pid eth0
+root      2978     1  0 Nov30 ?        00:00:03 /usr/libexec/postfix/master -w
+postfix   2980  2978  0 Nov30 ?        00:00:00 qmgr -l -t unix -u
+root      3020     1  0 Dec09 ?        00:00:01 /usr/sbin/crond -n
+root      3030     1  0 Nov30 ?        00:00:39 /usr/bin/amazon-ssm-agent
+root      3035     1  0 Nov30 ?        00:02:38 /usr/sbin/rsyslogd -n
+root      3051     1  0 Nov30 ?        00:00:00 /usr/sbin/atd -f
+root      3071     1  0 Nov30 ttyS0    00:00:00 /sbin/agetty --keep-baud 115200,38400,9600 ttyS0 vt220
+root      3072     1  0 Nov30 tty1     00:00:00 /sbin/agetty --noclear tty1 linux
+root      3201     1  0 Nov30 ?        00:00:54 /usr/sbin/sshd -D
+root      3207  3030  0 Nov30 ?        00:00:23 /usr/bin/ssm-agent-worker
+root      3235     1  0 Nov30 ?        00:00:00 /usr/sbin/acpid
+jenkins   3403     1  0 Dec09 ?        00:17:52 /etc/alternatives/java -Dcom.sun.akuma.Daemon=daemonized -Djava.awt.headless=true -Dmail.smtp.starttls.enable=true -Dmail.smtp.ssl.protocols=TLSv1.2 -DJENKINS_HOME=/var/lib/jenkins -jar /usr/lib/jenkins/jenkins.war --logfile=/var/log/jenkins/jenkins.log --webroot=/var/cache/jenkins/war --daemon --httpPort=8080 --debug=5 --handlerCountMax=100 --handlerCountMaxIdle=20
+root      3777     2  0 Dec14 ?        00:00:02 [kworker/u30:2]
+root     14243     2  0 21:23 ?        00:00:00 [kworker/0:1]
+root     14263  3201  0 21:25 ?        00:00:00 sshd: rudrap [priv]
+rudrap   14266 14263  0 21:25 ?        00:00:00 sshd: rudrap@pts/0
+rudrap   14267 14266  0 21:25 pts/0    00:00:00 -bash
+root     14292 14267  0 21:25 pts/0    00:00:00 sudo su -
+root     14293 14292  0 21:25 pts/0    00:00:00 su -
+root     14294 14293  0 21:25 pts/0    00:00:00 -bash
+root     14439     2  0 21:33 ?        00:00:00 [kworker/0:0]
+root     14620  3201  0 21:38 ?        00:00:00 sshd: rudrap [priv]
+rudrap   14622 14620  0 21:38 ?        00:00:00 sshd: rudrap@pts/1
+rudrap   14623 14622  0 21:39 pts/1    00:00:00 -bash
+root     14648 14623  0 21:39 pts/1    00:00:00 sudo su -
+root     14649 14648  0 21:39 pts/1    00:00:00 su -
+root     14650 14649  0 21:39 pts/1    00:00:00 -bash
+root     14687     2  0 21:39 ?        00:00:00 [kworker/0:2]
+root     14688  3201  0 21:39 ?        00:00:00 sshd: [accepted]
+sshd     14689 14688  0 21:39 ?        00:00:00 sshd: [net]
+postfix  14691  2978  0 21:39 ?        00:00:00 pickup -l -t unix -u
+root     14719 14650 13 21:40 pts/1    00:00:01 /usr/bin/python2 /usr/bin/ansible-playbook git-push-demo.yaml -e ansible_user=rudrap ansible_password=Sasuke14 --become --extra-vars ansible_sudo_pass=Sasuke14
+root     14811 14719  3 21:40 pts/1    00:00:00 /usr/bin/python2 /usr/bin/ansible-playbook git-push-demo.yaml -e ansible_user=rudrap ansible_password=Sasuke14 --become --extra-vars ansible_sudo_pass=Sasuke14
+root     14825 14811  0 21:40 pts/1    00:00:00 /bin/sh -c /usr/bin/python2 /root/.ansible/tmp/ansible-tmp-1608500452.46-14811-169161814875934/AnsiballZ_command.py && sleep 0
+root     14826 14825  1 21:40 pts/1    00:00:00 /usr/bin/python2 /root/.ansible/tmp/ansible-tmp-1608500452.46-14811-169161814875934/AnsiballZ_command.py
+root     14827 14826  0 21:40 pts/1    00:00:00 bash /tmp/precheck.sh
+root     14849 14827  0 21:40 pts/1    00:00:00 bash /tmp/precheck.sh
+root     14850 14827  0 21:40 pts/1    00:00:00 tee /var/log/precheck_ansible-server_20122020214052
+root     14889     1  0 21:40 ?        00:00:00 /usr/lib/systemd/systemd-hostnamed
+root     14999 14849  0 21:40 pts/1    00:00:00 ps -ef
+root     26931     2  0 Dec19 ?        00:00:00 [kworker/u30:0]
+
+[0;32mCapturing currently running process details Completed[0m
+
+
+######################################################### LISTENING/CONFIGURED PORTS ####################################################################
+
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:111             0.0.0.0:*               LISTEN      2489/rpcbind        
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      3201/sshd           
+tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      2978/master         
+tcp        0      0 172.31.32.64:22         49.207.196.194:51177    ESTABLISHED 14263/sshd: rudrap  
+tcp        0      0 172.31.32.64:22         49.207.196.194:51652    ESTABLISHED 14620/sshd: rudrap  
+tcp        0   1280 172.31.32.64:22         218.92.0.172:26826      ESTABLISHED 14688/sshd: [accept 
+tcp6       0      0 :::111                  :::*                    LISTEN      2489/rpcbind        
+tcp6       0      0 :::8080                 :::*                    LISTEN      3403/java           
+tcp6       0      0 :::22                   :::*                    LISTEN      3201/sshd           
+
+[0;32mCapturing currently listening/configured port details Completed[0m
+
+
+############################################################## DB's RUNNING ####################################################################
+
+root     15002 14849  0 21:40 pts/1    00:00:00 grep -E pmon|dbsysc|mysql|postgres
+
+[0;32mCapturing currently running DB details Completed[0m
+
+
+###################################################### SERVICES RUNNING #####################################################################
+
+● cfn-hup.service - SYSV: Runs user-specified actions when a
+   Loaded: loaded (/etc/rc.d/init.d/cfn-hup; bad; vendor preset: disabled)
+   Active: inactive (dead)
+     Docs: man:systemd-sysv-generator(8)
+● jenkins.service - LSB: Jenkins Automation Server
+   Loaded: loaded (/etc/rc.d/init.d/jenkins; bad; vendor preset: disabled)
+   Active: active (running) since Wed 2020-12-09 11:39:08 UTC; 1 weeks 4 days ago
+     Docs: man:systemd-sysv-generator(8)
+  Process: 3362 ExecStop=/etc/rc.d/init.d/jenkins stop (code=exited, status=0/SUCCESS)
+  Process: 3381 ExecStart=/etc/rc.d/init.d/jenkins start (code=exited, status=0/SUCCESS)
+   CGroup: /system.slice/jenkins.service
+           └─3403 /etc/alternatives/java -Dcom.sun.akuma.Daemon=daemonized -Djava.awt.headless=true -Dmail.smtp.starttls.enable=true -Dmail.smtp.ssl.protocols=TLSv1.2 -DJENKINS_HOME=/var/lib/jenkins -jar /usr/lib/jenkins/jenkins.war --logfile=/var/log/jenkins/jenkins.log --webroot=/var/cache/jenkins/war --daemon --httpPort=8080 --debug=5 --handlerCountMax=100 --handlerCountMaxIdle=20
+
+Dec 19 18:06:48 ansible-server sudo[23176]:  jenkins : TTY=unknown ; PWD=/var/lib/jenkins/workspace/Git Demo ; USER=root ; COMMAND=/bin/bash prechecks.sh
+Dec 19 18:08:35 ansible-server sudo[23469]:  jenkins : TTY=unknown ; PWD=/var/lib/jenkins/workspace/Git Demo ; USER=root ; COMMAND=/bin/bash prechecks.sh
+Dec 19 18:08:43 ansible-server sudo[23746]:  jenkins : TTY=unknown ; PWD=/var/lib/jenkins/workspace/Git Demo ; USER=root ; COMMAND=/bin/bash prechecks.sh
+Dec 19 18:11:46 ansible-server sudo[24041]:  jenkins : TTY=unknown ; PWD=/var/lib/jenkins/workspace/Git Demo ; USER=root ; COMMAND=/bin/bash prechecks.sh
+Dec 19 18:12:12 ansible-server sudo[24323]:  jenkins : TTY=unknown ; PWD=/var/lib/jenkins/workspace/Git Demo ; USER=root ; COMMAND=/bin/bash prechecks.sh
+Dec 19 18:12:42 ansible-server sudo[24612]:  jenkins : TTY=unknown ; PWD=/var/lib/jenkins/workspace/Git Demo ; USER=root ; COMMAND=/bin/bash prechecks.sh
+Dec 19 18:18:51 ansible-server sudo[25136]:  jenkins : TTY=unknown ; PWD=/var/lib/jenkins/workspace/Git Demo ; USER=root ; COMMAND=/bin/bash prechecks.sh
+Dec 19 18:22:01 ansible-server sudo[25630]:  jenkins : TTY=unknown ; PWD=/var/lib/jenkins/workspace/Git Demo ; USER=root ; COMMAND=/bin/bash prechecks.sh
+Dec 19 18:24:52 ansible-server sudo[25970]:  jenkins : TTY=unknown ; PWD=/var/lib/jenkins/workspace/Git Demo ; USER=root ; COMMAND=/bin/bash prechecks.sh
+Dec 19 18:28:28 ansible-server sudo[26299]:  jenkins : TTY=unknown ; PWD=/var/lib/jenkins/workspace/Git Demo ; USER=root ; COMMAND=/bin/bash prechecks.sh
+netconsole module not loaded
+Configured devices:
+lo eth0
+Currently active devices:
+lo eth0
+
+[0;32mCapturing currently running services details Completed[0m
+
+
+############################################### SERVICES ENABLED DURING SERVER STARTUP  #############################################################
+
+brandbot.path                                 enabled 
+acpid.service                                 enabled 
+amazon-ssm-agent.service                      enabled 
+amzn2-early-relabel-modules.service           enabled 
+atd.service                                   enabled 
+auditd.service                                enabled 
+autovt@.service                               enabled 
+chronyd.service                               enabled 
+cloud-config.service                          enabled 
+cloud-final.service                           enabled 
+cloud-init-local.service                      enabled 
+cloud-init.service                            enabled 
+crond.service                                 enabled 
+dmraid-activation.service                     enabled 
+ec2-instance-connect.service                  enabled 
+ec2net-scan.service                           enabled 
+getty@.service                                enabled 
+hibinit-agent.service                         enabled 
+irqbalance.service                            enabled 
+libstoragemgmt.service                        enabled 
+lvm2-monitor.service                          enabled 
+mdmonitor.service                             enabled 
+microcode.service                             enabled 
+postfix.service                               enabled 
+rhel-autorelabel-mark.service                 enabled 
+rhel-autorelabel.service                      enabled 
+rhel-configure.service                        enabled 
+rhel-dmesg.service                            enabled 
+rhel-domainname.service                       enabled 
+rhel-import-state.service                     enabled 
+rhel-loadmodules.service                      enabled 
+rhel-readonly.service                         enabled 
+rngd.service                                  enabled 
+rpcbind.service                               enabled 
+rsyslog.service                               enabled 
+sshd.service                                  enabled 
+sysstat.service                               enabled 
+systemd-readahead-collect.service             enabled 
+systemd-readahead-drop.service                enabled 
+systemd-readahead-replay.service              enabled 
+update-motd.service                           enabled 
+dm-event.socket                               enabled 
+lvm2-lvmetad.socket                           enabled 
+lvm2-lvmpolld.socket                          enabled 
+rpcbind.socket                                enabled 
+default.target                                enabled 
+graphical.target                              enabled 
+nfs-client.target                             enabled 
+remote-fs.target                              enabled 
+runlevel5.target                              enabled 
+
+[0;32mCapturing services details enabled during server startup Completed[0m
+
+
+####################################################### AVAILABLE PACKAGE UPDATES ####################################################################
+
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Updated Packages
+jenkins.noarch                         2.271-1.1                      jenkins   
+kernel.x86_64                          4.14.209-160.339.amzn2         amzn2-core
+kernel-tools.x86_64                    4.14.209-160.339.amzn2         amzn2-core
+libgcc.x86_64                          7.3.1-12.amzn2                 amzn2-core
+libgomp.x86_64                         7.3.1-12.amzn2                 amzn2-core
+libstdc++.x86_64                       7.3.1-12.amzn2                 amzn2-core
+selinux-policy.noarch                  3.13.1-192.amzn2.6.5           amzn2-core
+selinux-policy-targeted.noarch         3.13.1-192.amzn2.6.5           amzn2-core
+
+[0;32mCapturing available package updates details Completed[0m
+
+
+########################################################### PRECHECK EXECUTION COMPLETED #############################################################
+
