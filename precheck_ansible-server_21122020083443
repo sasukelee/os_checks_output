@@ -1,7 +1,7 @@
 
 ################################################################ PRECHECK EXECUTION ##################################################################
 
-Created and writing output to '/var/log/precheck_ansible-server_20122020215145' log file.
+Created and writing output to '/var/log/precheck_ansible-server_21122020083443' log file.
 
 ################################################################ TAR BACKUP ##################################################################
 
@@ -9,19 +9,19 @@ Taking tar backup of /boot...
 
 [0;32mTar backup of /boot Completed[0m
 
-[0;32m/var/log/boot-20122020215145.tar.gz file created successfully.[0m
+[0;32m/var/log/boot-21122020083443.tar.gz file created successfully.[0m
 
 Taking tar backup of /etc...
 
 [0;32mTar backup of /etc Completed[0m
 
-[0;32m/var/log/etc-20122020215145.tar.gz file created successfully.[0m
+[0;32m/var/log/etc-21122020083443.tar.gz file created successfully.[0m
 
 Taking tar backup of /etc/pam.d...
 
 [0;32mTar backup of /etc/pam.d Completed[0m
 
-[0;32m/var/log/pam-20122020215145.tar.gz file created successfully.[0m
+[0;32m/var/log/pam-21122020083443.tar.gz file created successfully.[0m
 
 
 ############################################################ SYSTEM INFORMATION ##################################################################
@@ -30,7 +30,7 @@ Hostname:		[0;32mansible-server[0m
 Server IP:		[0;32m172.31.32.64[0m
 Subnet Mask:		[0;32m255.255.240.0[0m
 Gateway:		[0;32m172.31.32.1[0m
-uptime:			[0;32m20 days [0m
+uptime:			[0;32m21 days [0m
 Manufacturer:		[0;32mXen[0m
 Product Name:		[0;32mHVM domU[0m
 Machine Type:		[0;32mVM[0m
@@ -41,6 +41,8 @@ Processor Name:		[0;32mIntel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz[0m
 Installed Java Version:	[0;32mopenjdk version "1.8.0_265"[0m
 Active User:
 [0;32mrudrap
+rudrap
+rudrap
 rudrap
 rudrap[0m
 
@@ -76,16 +78,16 @@ xvda    202:0    0   8G  0 disk
 
 ###################################################### CPU/MEMORY USAGE DETAILS ################################################################
 
-Total Memory Usage:	[0;32m64.78%[0m
+Total Memory Usage:	[0;32m68.80%[0m
 Total Swap Usage:	[0;32mSwap space not allocated[0m
 Total CPU Usage:	[0;32m0.44%[0m
 
 ########################################################## MEMORY USAGE DETAILED INFORMATION #######################################################
 
               total        used        free      shared  buff/cache   available
-Mem:            983         637          67           0         278         202
+Mem:            983         676          67           0         239         163
 Swap:             0           0           0
-Total:          983         637          67
+Total:          983         676          67
 
 [0;32mCapturing Memory Usage Details Completed[0m
 
@@ -95,10 +97,11 @@ Total:          983         637          67
 Filesystem     Type      Size  Used Avail Use% Mounted on
 devtmpfs       devtmpfs  482M     0  482M   0% /dev
 tmpfs          tmpfs     492M  128K  492M   1% /dev/shm
-tmpfs          tmpfs     492M  600K  492M   1% /run
+tmpfs          tmpfs     492M  724K  491M   1% /run
 tmpfs          tmpfs     492M     0  492M   0% /sys/fs/cgroup
-/dev/xvda1     xfs       8.0G  6.1G  2.0G  77% /
+/dev/xvda1     xfs       8.0G  6.7G  1.4G  83% /
 tmpfs          tmpfs      99M     0   99M   0% /run/user/1001
+tmpfs          tmpfs      99M     0   99M   0% /run/user/0
 
 [0;32mCapturing Disk Usage Details Completed[0m
 
@@ -119,18 +122,18 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 9001
         inet 172.31.32.64  netmask 255.255.240.0  broadcast 172.31.47.255
         inet6 fe80::8bd:fdff:fe8c:5258  prefixlen 64  scopeid 0x20<link>
         ether 0a:bd:fd:8c:52:58  txqueuelen 1000  (Ethernet)
-        RX packets 3210544  bytes 1143232615 (1.0 GiB)
+        RX packets 3275717  bytes 1158111431 (1.0 GiB)
         RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 2983934  bytes 906447481 (864.4 MiB)
+        TX packets 3050181  bytes 927443070 (884.4 MiB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
         inet 127.0.0.1  netmask 255.0.0.0
         inet6 ::1  prefixlen 128  scopeid 0x10<host>
         loop  txqueuelen 1000  (Local Loopback)
-        RX packets 129923  bytes 10913536 (10.4 MiB)
+        RX packets 136089  bytes 11431480 (10.9 MiB)
         RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 129923  bytes 10913536 (10.4 MiB)
+        TX packets 136089  bytes 11431480 (10.9 MiB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 
@@ -536,15 +539,15 @@ touch /var/lock/subsys/local
 ############################################################# RUNNING PROCESSES ####################################################################
 
 UID        PID  PPID  C STIME TTY          TIME CMD
-root         1     0  0 Nov30 ?        00:00:45 /usr/lib/systemd/systemd --switched-root --system --deserialize 21
+root         1     0  0 Nov30 ?        00:00:47 /usr/lib/systemd/systemd --switched-root --system --deserialize 21
 root         2     0  0 Nov30 ?        00:00:00 [kthreadd]
 root         4     2  0 Nov30 ?        00:00:00 [kworker/0:0H]
 root         6     2  0 Nov30 ?        00:00:00 [mm_percpu_wq]
 root         7     2  0 Nov30 ?        00:00:21 [ksoftirqd/0]
-root         8     2  0 Nov30 ?        00:00:23 [rcu_sched]
+root         8     2  0 Nov30 ?        00:00:24 [rcu_sched]
 root         9     2  0 Nov30 ?        00:00:00 [rcu_bh]
 root        10     2  0 Nov30 ?        00:00:00 [migration/0]
-root        11     2  0 Nov30 ?        00:00:03 [watchdog/0]
+root        11     2  0 Nov30 ?        00:00:04 [watchdog/0]
 root        12     2  0 Nov30 ?        00:00:00 [cpuhp/0]
 root        14     2  0 Nov30 ?        00:00:00 [kdevtmpfs]
 root        15     2  0 Nov30 ?        00:00:00 [netns]
@@ -562,11 +565,12 @@ root       182     2  0 Nov30 ?        00:00:00 [kblockd]
 root       535     2  0 Nov30 ?        00:00:00 [md]
 root       538     2  0 Nov30 ?        00:00:00 [edac-poller]
 root       543     2  0 Nov30 ?        00:00:00 [watchdogd]
-root       684     2  0 Nov30 ?        00:00:11 [kauditd]
-root       690     2  0 Nov30 ?        00:00:08 [kswapd0]
+root       684     2  0 Nov30 ?        00:00:12 [kauditd]
+root       690     2  0 Nov30 ?        00:00:09 [kswapd0]
 root       822     2  0 Nov30 ?        00:00:00 [kthrotld]
 root       872     2  0 Nov30 ?        00:00:00 [kstrp]
 root       900     2  0 Nov30 ?        00:00:00 [ipv6_addrconf]
+root      1080     2  0 08:09 ?        00:00:00 [kworker/0:1]
 root      1538     2  0 Nov30 ?        00:00:00 [ata_sff]
 root      1553     2  0 Nov30 ?        00:00:00 [scsi_eh_0]
 root      1554     2  0 Nov30 ?        00:00:00 [scsi_tmf_0]
@@ -581,71 +585,85 @@ root      1592     2  0 Nov30 ?        00:00:00 [xfs-cil/xvda1]
 root      1593     2  0 Nov30 ?        00:00:00 [xfs-reclaim/xvd]
 root      1594     2  0 Nov30 ?        00:00:00 [xfs-log/xvda1]
 root      1595     2  0 Nov30 ?        00:00:00 [xfs-eofblocks/x]
-root      1596     2  0 Nov30 ?        00:06:09 [xfsaild/xvda1]
+root      1596     2  0 Nov30 ?        00:06:17 [xfsaild/xvda1]
 root      1597     2  0 Nov30 ?        00:00:01 [kworker/0:1H]
-root      1660     1  0 Nov30 ?        00:03:08 /usr/lib/systemd/systemd-journald
+root      1660     1  0 Nov30 ?        00:03:12 /usr/lib/systemd/systemd-journald
 root      1684     1  0 Nov30 ?        00:00:00 /usr/sbin/lvmetad -f
 root      1690     2  0 Nov30 ?        00:00:00 [ena]
 root      1699     1  0 Nov30 ?        00:00:00 /usr/lib/systemd/systemd-udevd
-root      2441     1  0 Nov30 ?        00:00:50 /sbin/auditd
+root      2441     1  0 Nov30 ?        00:00:52 /sbin/auditd
 root      2449     2  0 Nov30 ?        00:00:00 [rpciod]
 root      2452     2  0 Nov30 ?        00:00:00 [xprtiod]
-libstor+  2477     1  0 Nov30 ?        00:00:02 /usr/bin/lsmd -d
+libstor+  2477     1  0 Nov30 ?        00:00:03 /usr/bin/lsmd -d
 rpc       2489     1  0 Nov30 ?        00:00:01 /sbin/rpcbind -w
-chrony    2491     1  0 Nov30 ?        00:00:19 /usr/sbin/chronyd
+chrony    2491     1  0 Nov30 ?        00:00:20 /usr/sbin/chronyd
 root      2493     1  0 Nov30 ?        00:00:00 /usr/sbin/gssproxy -D
 root      2502     1  0 Nov30 ?        00:00:10 /usr/lib/systemd/systemd-logind
 dbus      2503     1  0 Nov30 ?        00:00:18 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
-rngd      2516     1  0 Nov30 ?        00:00:31 /sbin/rngd -f --fill-watermark=0
+rngd      2516     1  0 Nov30 ?        00:00:32 /sbin/rngd -f --fill-watermark=0
 root      2719     1  0 Nov30 ?        00:00:00 /sbin/dhclient -q -lf /var/lib/dhclient/dhclient--eth0.lease -pf /var/run/dhclient-eth0.pid eth0
 root      2835     1  0 Nov30 ?        00:00:02 /sbin/dhclient -6 -nw -lf /var/lib/dhclient/dhclient6--eth0.lease -pf /var/run/dhclient6-eth0.pid eth0
+root      2842     2  0 08:20 ?        00:00:00 [kworker/0:2]
 root      2978     1  0 Nov30 ?        00:00:03 /usr/libexec/postfix/master -w
 postfix   2980  2978  0 Nov30 ?        00:00:00 qmgr -l -t unix -u
 root      3020     1  0 Dec09 ?        00:00:01 /usr/sbin/crond -n
 root      3030     1  0 Nov30 ?        00:00:39 /usr/bin/amazon-ssm-agent
-root      3035     1  0 Nov30 ?        00:02:38 /usr/sbin/rsyslogd -n
+root      3035     1  0 Nov30 ?        00:02:41 /usr/sbin/rsyslogd -n
 root      3051     1  0 Nov30 ?        00:00:00 /usr/sbin/atd -f
 root      3071     1  0 Nov30 ttyS0    00:00:00 /sbin/agetty --keep-baud 115200,38400,9600 ttyS0 vt220
 root      3072     1  0 Nov30 tty1     00:00:00 /sbin/agetty --noclear tty1 linux
-root      3201     1  0 Nov30 ?        00:00:54 /usr/sbin/sshd -D
+root      3201     1  0 Nov30 ?        00:00:56 /usr/sbin/sshd -D
 root      3207  3030  0 Nov30 ?        00:00:23 /usr/bin/ssm-agent-worker
 root      3235     1  0 Nov30 ?        00:00:00 /usr/sbin/acpid
-jenkins   3403     1  0 Dec09 ?        00:17:53 /etc/alternatives/java -Dcom.sun.akuma.Daemon=daemonized -Djava.awt.headless=true -Dmail.smtp.starttls.enable=true -Dmail.smtp.ssl.protocols=TLSv1.2 -DJENKINS_HOME=/var/lib/jenkins -jar /usr/lib/jenkins/jenkins.war --logfile=/var/log/jenkins/jenkins.log --webroot=/var/cache/jenkins/war --daemon --httpPort=8080 --debug=5 --handlerCountMax=100 --handlerCountMaxIdle=20
-root     14263  3201  0 21:25 ?        00:00:00 sshd: rudrap [priv]
-rudrap   14266 14263  0 21:25 ?        00:00:00 sshd: rudrap@pts/0
-rudrap   14267 14266  0 21:25 pts/0    00:00:00 -bash
-root     14292 14267  0 21:25 pts/0    00:00:00 sudo su -
-root     14293 14292  0 21:25 pts/0    00:00:00 su -
-root     14294 14293  0 21:25 pts/0    00:00:00 -bash
-root     14439     2  0 21:33 ?        00:00:00 [kworker/0:0]
-root     14620  3201  0 21:38 ?        00:00:00 sshd: rudrap [priv]
-rudrap   14622 14620  0 21:38 ?        00:00:00 sshd: rudrap@pts/1
-rudrap   14623 14622  0 21:39 pts/1    00:00:00 -bash
-root     14648 14623  0 21:39 pts/1    00:00:00 sudo su -
-root     14649 14648  0 21:39 pts/1    00:00:00 su -
-root     14650 14649  0 21:39 pts/1    00:00:00 -bash
-postfix  14691  2978  0 21:39 ?        00:00:00 pickup -l -t unix -u
-root     16126     2  0 21:44 ?        00:00:00 [kworker/0:1]
-root     16142 14294  0 21:45 pts/0    00:00:00 ping localhost
-root     16159     2  0 21:46 ?        00:00:00 [kworker/u30:1]
-root     17140     2  0 21:50 ?        00:00:00 [kworker/0:2]
-root     17154  3201  0 21:50 ?        00:00:00 sshd: rudrap [priv]
-root     17158     1  0 21:50 ?        00:00:00 ssh: /root/.ansible/cp/b558b8612f [mux]
-rudrap   17159 17154  0 21:50 ?        00:00:00 sshd: rudrap@pts/4
-root     18993 14650 13 21:51 pts/1    00:00:01 /usr/bin/python2 /usr/bin/ansible-playbook /etc/ansible/git_push/git-push-demo.yaml -e ansible_user=rudrap ansible_password=Sasuke14 --become --extra-vars ansible_sudo_pass=Sasuke14
-root     19290 18993  3 21:51 pts/1    00:00:00 /usr/bin/python2 /usr/bin/ansible-playbook /etc/ansible/git_push/git-push-demo.yaml -e ansible_user=rudrap ansible_password=Sasuke14 --become --extra-vars ansible_sudo_pass=Sasuke14
-root     19347 19290  0 21:51 pts/1    00:00:00 sshpass -d10 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o User="rudrap" -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/b558b8612f -tt 18.221.55.3 /bin/sh -c 'sudo -H -S  -p "[sudo via ansible, key=xadtzdjgbniuvypgaombbserhlquihod] password:" -u root /bin/sh -c '"'"'echo BECOME-SUCCESS-xadtzdjgbniuvypgaombbserhlquihod ; /usr/bin/python /home/rudrap/.ansible/tmp/ansible-tmp-1608501104.77-19290-134219043362632/AnsiballZ_command.py'"'"' && sleep 0'
-root     19348 19347  0 21:51 pts/3    00:00:00 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o User="rudrap" -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/b558b8612f -tt 18.221.55.3 /bin/sh -c 'sudo -H -S  -p "[sudo via ansible, key=xadtzdjgbniuvypgaombbserhlquihod] password:" -u root /bin/sh -c '"'"'echo BECOME-SUCCESS-xadtzdjgbniuvypgaombbserhlquihod ; /usr/bin/python /home/rudrap/.ansible/tmp/ansible-tmp-1608501104.77-19290-134219043362632/AnsiballZ_command.py'"'"' && sleep 0'
-rudrap   19349 17159  0 21:51 pts/4    00:00:00 /bin/sh -c sudo -H -S  -p "[sudo via ansible, key=xadtzdjgbniuvypgaombbserhlquihod] password:" -u root /bin/sh -c 'echo BECOME-SUCCESS-xadtzdjgbniuvypgaombbserhlquihod ; /usr/bin/python /home/rudrap/.ansible/tmp/ansible-tmp-1608501104.77-19290-134219043362632/AnsiballZ_command.py' && sleep 0
-root     19364 19349  0 21:51 pts/4    00:00:00 sudo -H -S -p [sudo via ansible, key=xadtzdjgbniuvypgaombbserhlquihod] password: -u root /bin/sh -c echo BECOME-SUCCESS-xadtzdjgbniuvypgaombbserhlquihod ; /usr/bin/python /home/rudrap/.ansible/tmp/ansible-tmp-1608501104.77-19290-134219043362632/AnsiballZ_command.py
-root     19365 19364  0 21:51 pts/4    00:00:00 /bin/sh -c echo BECOME-SUCCESS-xadtzdjgbniuvypgaombbserhlquihod ; /usr/bin/python /home/rudrap/.ansible/tmp/ansible-tmp-1608501104.77-19290-134219043362632/AnsiballZ_command.py
-root     19366 19365  1 21:51 pts/4    00:00:00 /usr/bin/python /home/rudrap/.ansible/tmp/ansible-tmp-1608501104.77-19290-134219043362632/AnsiballZ_command.py
-root     19367 19366  0 21:51 pts/4    00:00:00 bash /tmp/precheck.sh
-root     19389 19367  0 21:51 pts/4    00:00:00 bash /tmp/precheck.sh
-root     19390 19367  0 21:51 pts/4    00:00:00 tee /var/log/precheck_ansible-server_20122020215145
-root     19428     1  0 21:51 ?        00:00:00 /usr/lib/systemd/systemd-hostnamed
-root     19539 19389  0 21:51 pts/4    00:00:00 ps -ef
+root      3248     2  0 08:26 ?        00:00:00 [kworker/0:0]
+jenkins   3403     1  0 Dec09 ?        00:18:34 /etc/alternatives/java -Dcom.sun.akuma.Daemon=daemonized -Djava.awt.headless=true -Dmail.smtp.starttls.enable=true -Dmail.smtp.ssl.protocols=TLSv1.2 -DJENKINS_HOME=/var/lib/jenkins -jar /usr/lib/jenkins/jenkins.war --logfile=/var/log/jenkins/jenkins.log --webroot=/var/cache/jenkins/war --daemon --httpPort=8080 --debug=5 --handlerCountMax=100 --handlerCountMaxIdle=20
+root      3939     2  0 08:30 ?        00:00:00 [kworker/0:3]
+root      4341     1  0 08:30 ?        00:00:00 /usr/libexec/git-core/git-credential-cache--daemon /root/.cache/git/credential/socket
+root      4440 31574  0 08:34 pts/3    00:00:00 ping localhost
+jenkins   4447  3403  0 08:34 ?        00:00:00 /bin/sh -xe /tmp/jenkins212181904919512715.sh
+jenkins   4451  4447 12 08:34 ?        00:00:01 /usr/bin/python2 /bin/ansible-playbook /etc/ansible/git_push/git-push-demo.yaml -e ansible_user=rudrap ansible_password=Sasuke14 --become --extra-vars ansible_sudo_pass=Sasuke14
+root      4462  3201  2 08:34 ?        00:00:00 sshd: rudrap [priv]
+jenkins   4466     1  0 08:34 ?        00:00:00 ssh: /var/lib/jenkins/.ansible/cp/b558b8612f [mux]
+rudrap    4467  4462  0 08:34 ?        00:00:00 sshd: rudrap@pts/6
+jenkins   4751  4451  4 08:34 ?        00:00:00 /usr/bin/python2 /bin/ansible-playbook /etc/ansible/git_push/git-push-demo.yaml -e ansible_user=rudrap ansible_password=Sasuke14 --become --extra-vars ansible_sudo_pass=Sasuke14
+jenkins   4809  4751  0 08:34 ?        00:00:00 sshpass -d8 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o User="rudrap" -o ConnectTimeout=10 -o ControlPath=/var/lib/jenkins/.ansible/cp/b558b8612f -tt 18.221.55.3 /bin/sh -c 'sudo -H -S  -p "[sudo via ansible, key=ckmzoryivwwekripngcqxabijdnmqiuj] password:" -u root /bin/sh -c '"'"'echo BECOME-SUCCESS-ckmzoryivwwekripngcqxabijdnmqiuj ; /usr/bin/python /home/rudrap/.ansible/tmp/ansible-tmp-1608539683.18-4751-216349907166233/AnsiballZ_command.py'"'"' && sleep 0'
+jenkins   4810  4809  0 08:34 pts/5    00:00:00 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o User="rudrap" -o ConnectTimeout=10 -o ControlPath=/var/lib/jenkins/.ansible/cp/b558b8612f -tt 18.221.55.3 /bin/sh -c 'sudo -H -S  -p "[sudo via ansible, key=ckmzoryivwwekripngcqxabijdnmqiuj] password:" -u root /bin/sh -c '"'"'echo BECOME-SUCCESS-ckmzoryivwwekripngcqxabijdnmqiuj ; /usr/bin/python /home/rudrap/.ansible/tmp/ansible-tmp-1608539683.18-4751-216349907166233/AnsiballZ_command.py'"'"' && sleep 0'
+rudrap    4811  4467  0 08:34 pts/6    00:00:00 /bin/sh -c sudo -H -S  -p "[sudo via ansible, key=ckmzoryivwwekripngcqxabijdnmqiuj] password:" -u root /bin/sh -c 'echo BECOME-SUCCESS-ckmzoryivwwekripngcqxabijdnmqiuj ; /usr/bin/python /home/rudrap/.ansible/tmp/ansible-tmp-1608539683.18-4751-216349907166233/AnsiballZ_command.py' && sleep 0
+root      4825  4811  0 08:34 pts/6    00:00:00 sudo -H -S -p [sudo via ansible, key=ckmzoryivwwekripngcqxabijdnmqiuj] password: -u root /bin/sh -c echo BECOME-SUCCESS-ckmzoryivwwekripngcqxabijdnmqiuj ; /usr/bin/python /home/rudrap/.ansible/tmp/ansible-tmp-1608539683.18-4751-216349907166233/AnsiballZ_command.py
+root      4826  4825  0 08:34 pts/6    00:00:00 /bin/sh -c echo BECOME-SUCCESS-ckmzoryivwwekripngcqxabijdnmqiuj ; /usr/bin/python /home/rudrap/.ansible/tmp/ansible-tmp-1608539683.18-4751-216349907166233/AnsiballZ_command.py
+root      4827  4826  1 08:34 pts/6    00:00:00 /usr/bin/python /home/rudrap/.ansible/tmp/ansible-tmp-1608539683.18-4751-216349907166233/AnsiballZ_command.py
+root      4828  4827  0 08:34 pts/6    00:00:00 bash /tmp/precheck.sh
+root      4850  4828  0 08:34 pts/6    00:00:00 bash /tmp/precheck.sh
+root      4852  4828  0 08:34 pts/6    00:00:00 tee /var/log/precheck_ansible-server_21122020083443
+root      4890     1  0 08:34 ?        00:00:00 /usr/lib/systemd/systemd-hostnamed
+root      5003  4850  0 08:34 pts/6    00:00:00 ps -ef
+root     19911     2  0 Dec20 ?        00:00:00 [kworker/u30:2]
 root     26931     2  0 Dec19 ?        00:00:00 [kworker/u30:0]
+root     28746  3201  0 07:17 ?        00:00:00 sshd: rudrap [priv]
+rudrap   28748 28746  0 07:17 ?        00:00:00 sshd: rudrap@pts/0
+rudrap   28749 28748  0 07:17 pts/0    00:00:00 -bash
+root     28774 28749  0 07:17 pts/0    00:00:00 sudo su -
+root     28775 28774  0 07:17 pts/0    00:00:00 su -
+root     28776 28775  0 07:17 pts/0    00:00:00 -bash
+postfix  30167  2978  0 07:39 ?        00:00:00 pickup -l -t unix -u
+root     30186  3201  0 07:40 ?        00:00:00 sshd: rudrap [priv]
+rudrap   30189 30186  0 07:41 ?        00:00:00 sshd: rudrap@pts/1
+rudrap   30190 30189  0 07:41 pts/1    00:00:00 -bash
+root     30217 30190  0 07:41 pts/1    00:00:00 sudo su -
+root     30219 30217  0 07:41 pts/1    00:00:00 su -
+root     30220 30219  0 07:41 pts/1    00:00:00 -bash
+root     31321  3201  0 07:54 ?        00:00:00 sshd: rudrap [priv]
+rudrap   31323 31321  0 07:54 ?        00:00:00 sshd: rudrap@pts/2
+rudrap   31324 31323  0 07:54 pts/2    00:00:00 -bash
+root     31351 31324  0 07:54 pts/2    00:00:00 sudo su -
+root     31353 31351  0 07:54 pts/2    00:00:00 su -
+root     31354 31353  0 07:54 pts/2    00:00:00 -bash
+root     31534  3201  0 08:02 ?        00:00:00 sshd: rudrap [priv]
+rudrap   31538 31534  0 08:02 ?        00:00:00 sshd: rudrap@pts/3
+rudrap   31539 31538  0 08:02 pts/3    00:00:00 -bash
+root     31572 31539  0 08:03 pts/3    00:00:00 sudo su -
+root     31573 31572  0 08:03 pts/3    00:00:00 su -
+root     31574 31573  0 08:03 pts/3    00:00:00 -bash
 
 [0;32mCapturing currently running process details Completed[0m
 
@@ -657,20 +675,32 @@ Proto Recv-Q Send-Q Local Address           Foreign Address         State       
 tcp        0      0 0.0.0.0:111             0.0.0.0:*               LISTEN      2489/rpcbind        
 tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      3201/sshd           
 tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      2978/master         
-tcp        0      0 172.31.32.64:22         49.207.196.194:51177    ESTABLISHED 14263/sshd: rudrap  
-tcp        0      0 172.31.32.64:47970      18.221.55.3:22          ESTABLISHED 17158/ssh: /root/.a 
-tcp        0      0 172.31.32.64:22         49.207.196.194:51652    ESTABLISHED 14620/sshd: rudrap  
-tcp        0      0 172.31.32.64:22         18.221.55.3:47970       ESTABLISHED 17154/sshd: rudrap  
+tcp       32      0 172.31.32.64:36490      140.82.114.4:443        CLOSE_WAIT  4341/git-credential 
+tcp        0      0 172.31.32.64:22         49.207.196.194:52035    ESTABLISHED 28746/sshd: rudrap  
+tcp        0      0 172.31.32.64:22         49.207.196.194:50781    ESTABLISHED 31321/sshd: rudrap  
+tcp        0      0 172.31.32.64:48188      18.221.55.3:22          ESTABLISHED 4466/ssh: /var/lib/ 
+tcp        0    128 172.31.32.64:22         27.59.19.73:3491        ESTABLISHED 31534/sshd: rudrap  
+tcp        0      1 172.31.32.64:22         222.187.238.87:30843    FIN_WAIT1   -                   
+tcp        0      0 172.31.32.64:22         49.207.196.194:50511    ESTABLISHED 30186/sshd: rudrap  
+tcp        0      0 172.31.32.64:22         18.221.55.3:48188       ESTABLISHED 4462/sshd: rudrap [ 
 tcp6       0      0 :::111                  :::*                    LISTEN      2489/rpcbind        
 tcp6       0      0 :::8080                 :::*                    LISTEN      3403/java           
 tcp6       0      0 :::22                   :::*                    LISTEN      3201/sshd           
+tcp6       0      0 172.31.32.64:8080       27.59.19.73:3613        ESTABLISHED 3403/java           
+tcp6       0      1 172.31.32.64:8080       27.59.19.73:3609        FIN_WAIT1   3403/java           
+tcp6       0      0 172.31.32.64:8080       27.59.19.73:3606        TIME_WAIT   -                   
+tcp6       0      0 172.31.32.64:8080       27.59.19.73:3610        ESTABLISHED 3403/java           
+tcp6       0    368 172.31.32.64:8080       27.59.19.73:3614        ESTABLISHED 3403/java           
+tcp6       0      0 172.31.32.64:8080       27.59.19.73:3612        ESTABLISHED 3403/java           
+tcp6       0      0 172.31.32.64:8080       27.59.19.73:3611        ESTABLISHED 3403/java           
+tcp6       0      0 172.31.32.64:8080       27.59.19.73:3607        TIME_WAIT   -                   
 
 [0;32mCapturing currently listening/configured port details Completed[0m
 
 
 ############################################################## DB's RUNNING ####################################################################
 
-root     19542 19389  0 21:51 pts/4    00:00:00 grep -E pmon|dbsysc|mysql|postgres
+root      5006  4850  0 08:34 pts/6    00:00:00 grep -E pmon|dbsysc|mysql|postgres
 
 [0;32mCapturing currently running DB details Completed[0m
 
@@ -688,18 +718,24 @@ root     19542 19389  0 21:51 pts/4    00:00:00 grep -E pmon|dbsysc|mysql|postgr
   Process: 3362 ExecStop=/etc/rc.d/init.d/jenkins stop (code=exited, status=0/SUCCESS)
   Process: 3381 ExecStart=/etc/rc.d/init.d/jenkins start (code=exited, status=0/SUCCESS)
    CGroup: /system.slice/jenkins.service
-           └─3403 /etc/alternatives/java -Dcom.sun.akuma.Daemon=daemonized -Djava.awt.headless=true -Dmail.smtp.starttls.enable=true -Dmail.smtp.ssl.protocols=TLSv1.2 -DJENKINS_HOME=/var/lib/jenkins -jar /usr/lib/jenkins/jenkins.war --logfile=/var/log/jenkins/jenkins.log --webroot=/var/cache/jenkins/war --daemon --httpPort=8080 --debug=5 --handlerCountMax=100 --handlerCountMaxIdle=20
+           ├─3403 /etc/alternatives/java -Dcom.sun.akuma.Daemon=daemonized -Djava.awt.headless=true -Dmail.smtp.starttls.enable=true -Dmail.smtp.ssl.protocols=TLSv1.2 -DJENKINS_HOME=/var/lib/jenkins -jar /usr/lib/jenkins/jenkins.war --logfile=/var/log/jenkins/jenkins.log --webroot=/var/cache/jenkins/war --daemon --httpPort=8080 --debug=5 --handlerCountMax=100 --handlerCountMaxIdle=20
+           ├─4447 /bin/sh -xe /tmp/jenkins212181904919512715.sh
+           ├─4451 /usr/bin/python2 /bin/ansible-playbook /etc/ansible/git_push/git-push-demo.yaml -e ansible_user=rudrap ansible_password=Sasuke14 --become --extra-vars ansible_sudo_pass=Sasuke14
+           ├─4466 ssh: /var/lib/jenkins/.ansible/cp/b558b8612f [mux]
+           ├─4751 /usr/bin/python2 /bin/ansible-playbook /etc/ansible/git_push/git-push-demo.yaml -e ansible_user=rudrap ansible_password=Sasuke14 --become --extra-vars ansible_sudo_pass=Sasuke14
+           ├─4809 sshpass -d8 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o User="rudrap" -o ConnectTimeout=10 -o ControlPath=/var/lib/jenkins/.ansible/cp/b558b8612f -tt 18.221.55.3 /bin/sh -c 'sudo -H -S  -p "[sudo via ansible, key=ckmzoryivwwekripngcqxabijdnmqiuj] password:" -u root /bin/sh -c '"'"'echo BECOME-SUCCESS-ckmzoryivwwekripngcqxabijdnmqiuj ; /usr/bin/python /home/rudrap/.ansible/tmp/ansible-tmp-1608539683.18-4751-216349907166233/AnsiballZ_command.py'"'"' && sleep 0'
+           └─4810 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o User="rudrap" -o ConnectTimeout=10 -o ControlPath=/var/lib/jenkins/.ansible/cp/b558b8612f -tt 18.221.55.3 /bin/sh -c 'sudo -H -S  -p "[sudo via ansible, key=ckmzoryivwwekripngcqxabijdnmqiuj] password:" -u root /bin/sh -c '"'"'echo BECOME-SUCCESS-ckmzoryivwwekripngcqxabijdnmqiuj ; /usr/bin/python /home/rudrap/.ansible/tmp/ansible-tmp-1608539683.18-4751-216349907166233/AnsiballZ_command.py'"'"' && sleep 0'
 
-Dec 19 18:06:48 ansible-server sudo[23176]:  jenkins : TTY=unknown ; PWD=/var/lib/jenkins/workspace/Git Demo ; USER=root ; COMMAND=/bin/bash prechecks.sh
-Dec 19 18:08:35 ansible-server sudo[23469]:  jenkins : TTY=unknown ; PWD=/var/lib/jenkins/workspace/Git Demo ; USER=root ; COMMAND=/bin/bash prechecks.sh
-Dec 19 18:08:43 ansible-server sudo[23746]:  jenkins : TTY=unknown ; PWD=/var/lib/jenkins/workspace/Git Demo ; USER=root ; COMMAND=/bin/bash prechecks.sh
-Dec 19 18:11:46 ansible-server sudo[24041]:  jenkins : TTY=unknown ; PWD=/var/lib/jenkins/workspace/Git Demo ; USER=root ; COMMAND=/bin/bash prechecks.sh
-Dec 19 18:12:12 ansible-server sudo[24323]:  jenkins : TTY=unknown ; PWD=/var/lib/jenkins/workspace/Git Demo ; USER=root ; COMMAND=/bin/bash prechecks.sh
-Dec 19 18:12:42 ansible-server sudo[24612]:  jenkins : TTY=unknown ; PWD=/var/lib/jenkins/workspace/Git Demo ; USER=root ; COMMAND=/bin/bash prechecks.sh
-Dec 19 18:18:51 ansible-server sudo[25136]:  jenkins : TTY=unknown ; PWD=/var/lib/jenkins/workspace/Git Demo ; USER=root ; COMMAND=/bin/bash prechecks.sh
-Dec 19 18:22:01 ansible-server sudo[25630]:  jenkins : TTY=unknown ; PWD=/var/lib/jenkins/workspace/Git Demo ; USER=root ; COMMAND=/bin/bash prechecks.sh
-Dec 19 18:24:52 ansible-server sudo[25970]:  jenkins : TTY=unknown ; PWD=/var/lib/jenkins/workspace/Git Demo ; USER=root ; COMMAND=/bin/bash prechecks.sh
-Dec 19 18:28:28 ansible-server sudo[26299]:  jenkins : TTY=unknown ; PWD=/var/lib/jenkins/workspace/Git Demo ; USER=root ; COMMAND=/bin/bash prechecks.sh
+Dec 21 08:30:06 ansible-server sudo[4285]:  jenkins : TTY=unknown ; PWD=/etc/ansible/git_push/prechecks/tasks ; USER=root ; COMMAND=/bin/git init .
+Dec 21 08:30:06 ansible-server sudo[4287]:  jenkins : TTY=unknown ; PWD=/etc/ansible/git_push/prechecks/tasks ; USER=root ; COMMAND=/bin/git remote remove origin
+Dec 21 08:30:06 ansible-server sudo[4291]:  jenkins : TTY=unknown ; PWD=/etc/ansible/git_push/prechecks/tasks ; USER=root ; COMMAND=/bin/git remote add origin https://github.com/sasukelee/os_checks_output.git
+Dec 21 08:30:07 ansible-server sudo[4295]:  jenkins : TTY=unknown ; PWD=/etc/ansible/git_push/prechecks/tasks ; USER=root ; COMMAND=/bin/git config credential.helper store
+Dec 21 08:30:07 ansible-server sudo[4299]:  jenkins : TTY=unknown ; PWD=/etc/ansible/git_push/prechecks/tasks ; USER=root ; COMMAND=/bin/git pull origin main
+Dec 21 08:30:07 ansible-server sudo[4310]:  jenkins : TTY=unknown ; PWD=/etc/ansible/git_push/prechecks/tasks ; USER=root ; COMMAND=/bin/git add precheck_ansible-server_20122020214052 precheck_ansible-server_20122020214214 precheck_output
+Dec 21 08:30:07 ansible-server sudo[4314]:  jenkins : TTY=unknown ; PWD=/etc/ansible/git_push/prechecks/tasks ; USER=root ; COMMAND=/bin/git status
+Dec 21 08:30:07 ansible-server sudo[4319]:  jenkins : TTY=unknown ; PWD=/etc/ansible/git_push/prechecks/tasks ; USER=root ; COMMAND=/bin/git commit -m precheck push
+Dec 21 08:30:07 ansible-server sudo[4324]:  jenkins : TTY=unknown ; PWD=/etc/ansible/git_push/prechecks/tasks ; USER=root ; COMMAND=/bin/git status
+Dec 21 08:30:07 ansible-server sudo[4329]:  jenkins : TTY=unknown ; PWD=/etc/ansible/git_push/prechecks/tasks ; USER=root ; COMMAND=/bin/git push origin HEAD:main
 netconsole module not loaded
 Configured devices:
 lo eth0
